@@ -1,3 +1,4 @@
+// Model the Inventory
 let inventory = [
 {
     sku: "Ghibli-001",
@@ -29,6 +30,7 @@ inventory.forEach(item => {
   console.log(`${item.sku} | ${item.name} | $${item.price} | Stock: ${item.stock}`);
 });
 
+// Manage Inventory Changes
 inventory.push({ sku: "Ghibli-005", name: "Art of Arrietty", price: 28.67, stock: 8 });
 console.log("Updated inventory: ", inventory);
 console.table(inventory);
@@ -44,6 +46,7 @@ console.log(`Updated ${inventory[1].name} stock to ${inventory[1].stock}`);
 console.log("Updated inventory: ", inventory);
 console.table(inventory);
 
+// Create and Process Orders
 let orders = [
   {
     orderId: "ORD-101",
@@ -93,6 +96,7 @@ orders.forEach(order => {
   }
 });
 
+// Reporting & Insights
 console.log("- Reports -");
 
 let totalValue = inventory.reduce((sum, item) => sum + (item.price * item.stock), 0);
