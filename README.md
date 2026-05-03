@@ -23,4 +23,4 @@ The core of the application focuses on **Transactional Integrity**, ensuring tha
 ## 🏃 How to Run Locally
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/hientran20040303/inventory-order-fulfillment-system.git
+   git clone https://github.com/hientran20040303/order-manager
